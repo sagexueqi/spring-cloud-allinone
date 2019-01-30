@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: standalone
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  application:
+    name: eureka-server
+
+# 监控端点配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
